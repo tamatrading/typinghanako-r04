@@ -749,12 +749,12 @@ const TypingGame: React.FC<Props> = ({ settings, onAdminRequest }) => {
   }, [gameState, resetGame, nextStage]);
 
   return (
-    <div className="min-h-screen w-full flex items-center justify-center bg-gray-100 p-2">
+    <div className="aspect-[4/3] w-[780px] flex justify-center bg-gray-100 p-2 pt-[5vh] mx-auto">
       <div
-        className="w-full max-w-2xl p-3 bg-gradient-to-b from-blue-100 to-blue-200 shadow-xl rounded-lg"
+        className="w-[700px] h-[525px] p-3 bg-gradient-to-b from-blue-100 to-blue-200 shadow-xl rounded-lg mx-auto"
         style={{
           transform: `scale(${settings.windowSize})`,
-          transformOrigin: 'center center',
+          transformOrigin: 'top center',
         }}
       >
         <GameHeader
